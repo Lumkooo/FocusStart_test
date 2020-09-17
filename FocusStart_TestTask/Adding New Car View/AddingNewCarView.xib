@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddingNewCarView" customModule="FocusStart_TestTask" customModuleProvider="target">
+            <connections>
+                <outlet property="addCarButton" destination="gEn-AA-AAR" id="bT5-8M-ggh"/>
+                <outlet property="carBodyTypeButton" destination="k5D-Xs-RmN" id="ia5-ee-dBU"/>
+                <outlet property="carMarkTextField" destination="Jvr-L2-LbS" id="C5g-Rw-Gkz"/>
+                <outlet property="carModelTextField" destination="0wa-Pv-cqk" id="ZTx-9u-LMe"/>
+                <outlet property="carYearTextField" destination="UoZ-UA-OuC" id="hok-ii-NoD"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="rIg-m6-bsD"/>
+                <outlet property="mainView" destination="kRG-Yg-2Ps" id="XvQ-Ua-f8A"/>
+                <outlet property="mainViewLeadingConstraint" destination="3ck-kC-6gM" id="N2Q-lN-tBN"/>
+                <outlet property="mainViewWidth" destination="yde-tr-9hZ" id="sR5-Bz-Otf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kRG-Yg-2Ps">
+                    <rect key="frame" x="0.0" y="260.5" width="350" height="375"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Марка" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4O-zO-xjK">
+                            <rect key="frame" x="8" y="42" width="52" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добавление машины в список" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2p-BT-tYY">
+                            <rect key="frame" x="29.5" y="8" width="291.5" height="24"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jvr-L2-LbS">
+                            <rect key="frame" x="8" y="71" width="334" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0wa-Pv-cqk">
+                            <rect key="frame" x="8" y="142" width="334" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Модель" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PlB-DN-F4x">
+                            <rect key="frame" x="8" y="113" width="62" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Год производства" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sGr-vI-uec">
+                            <rect key="frame" x="8" y="184" width="144" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тип кузова" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIb-NY-FxB">
+                            <rect key="frame" x="8" y="255" width="88" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k5D-Xs-RmN">
+                            <rect key="frame" x="8" y="284" width="334" height="30"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Выбрать">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="changeCarBodyTypeAction:" destination="-1" eventType="touchUpInside" id="oJI-sk-NCe"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qom-K9-uAK">
+                            <rect key="frame" x="8" y="337" width="75" height="30"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="75" id="ELJ-jW-4nL"/>
+                            </constraints>
+                            <state key="normal" title="Отмена">
+                                <color key="titleColor" red="1" green="0.0" blue="0.04677283753" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="cancelAction:" destination="-1" eventType="touchUpInside" id="Qje-Gq-gdv"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEn-AA-AAR">
+                            <rect key="frame" x="262" y="337" width="80" height="30"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="3Af-l7-gLe"/>
+                            </constraints>
+                            <state key="normal" title="Добавить">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="addCarAction:" destination="-1" eventType="touchUpInside" id="ulr-h6-zio"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UoZ-UA-OuC">
+                            <rect key="frame" x="8" y="213" width="334" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="UoZ-UA-OuC" secondAttribute="trailing" constant="8" id="CbI-ei-jVH"/>
+                        <constraint firstItem="Q4O-zO-xjK" firstAttribute="leading" secondItem="kRG-Yg-2Ps" secondAttribute="leading" constant="8" id="D49-dw-bZd"/>
+                        <constraint firstItem="k5D-Xs-RmN" firstAttribute="leading" secondItem="kRG-Yg-2Ps" secondAttribute="leading" constant="8" id="EBo-tl-rIa"/>
+                        <constraint firstItem="E2p-BT-tYY" firstAttribute="top" secondItem="kRG-Yg-2Ps" secondAttribute="top" constant="8" id="Kju-g3-1gB"/>
+                        <constraint firstItem="oIb-NY-FxB" firstAttribute="leading" secondItem="kRG-Yg-2Ps" secondAttribute="leading" constant="8" id="LXk-H8-pd2"/>
+                        <constraint firstItem="oIb-NY-FxB" firstAttribute="top" secondItem="UoZ-UA-OuC" secondAttribute="bottom" constant="8" id="Lxi-u3-IzW"/>
+                        <constraint firstItem="UoZ-UA-OuC" firstAttribute="top" secondItem="sGr-vI-uec" secondAttribute="bottom" constant="8" id="Oei-1m-uda"/>
+                        <constraint firstItem="k5D-Xs-RmN" firstAttribute="top" secondItem="oIb-NY-FxB" secondAttribute="bottom" constant="8" id="QgM-tH-nhA"/>
+                        <constraint firstItem="PlB-DN-F4x" firstAttribute="leading" secondItem="kRG-Yg-2Ps" secondAttribute="leading" constant="8" id="SFe-47-xt9"/>
+                        <constraint firstItem="Q4O-zO-xjK" firstAttribute="top" secondItem="E2p-BT-tYY" secondAttribute="bottom" constant="10" id="UuS-SL-OHF"/>
+                        <constraint firstItem="E2p-BT-tYY" firstAttribute="centerX" secondItem="kRG-Yg-2Ps" secondAttribute="centerX" id="Vr1-LV-ULo"/>
+                        <constraint firstItem="qom-K9-uAK" firstAttribute="leading" secondItem="kRG-Yg-2Ps" secondAttribute="leading" constant="8" id="WCp-tA-FE0"/>
+                        <constraint firstAttribute="bottom" secondItem="gEn-AA-AAR" secondAttribute="bottom" constant="8" id="X5T-Lk-SkJ"/>
+                        <constraint firstItem="sGr-vI-uec" firstAttribute="top" secondItem="0wa-Pv-cqk" secondAttribute="bottom" constant="8" id="XII-xi-olH"/>
+                        <constraint firstItem="Jvr-L2-LbS" firstAttribute="leading" secondItem="kRG-Yg-2Ps" secondAttribute="leading" constant="8" id="bT9-ll-n0A"/>
+                        <constraint firstItem="sGr-vI-uec" firstAttribute="leading" secondItem="kRG-Yg-2Ps" secondAttribute="leading" constant="8" id="bya-LB-wzG"/>
+                        <constraint firstAttribute="trailing" secondItem="gEn-AA-AAR" secondAttribute="trailing" constant="8" id="bzQ-JF-YoX"/>
+                        <constraint firstAttribute="height" constant="375" id="h9I-ke-kG2"/>
+                        <constraint firstItem="0wa-Pv-cqk" firstAttribute="top" secondItem="PlB-DN-F4x" secondAttribute="bottom" constant="8" id="kjw-wx-2QU"/>
+                        <constraint firstItem="PlB-DN-F4x" firstAttribute="top" secondItem="Jvr-L2-LbS" secondAttribute="bottom" constant="8" id="n93-RV-s1r"/>
+                        <constraint firstItem="UoZ-UA-OuC" firstAttribute="leading" secondItem="kRG-Yg-2Ps" secondAttribute="leading" constant="8" id="p9E-g3-Met"/>
+                        <constraint firstItem="Jvr-L2-LbS" firstAttribute="top" secondItem="Q4O-zO-xjK" secondAttribute="bottom" constant="8" id="prq-0H-bbM"/>
+                        <constraint firstAttribute="trailing" secondItem="0wa-Pv-cqk" secondAttribute="trailing" constant="8" id="qhi-CO-K0S"/>
+                        <constraint firstItem="0wa-Pv-cqk" firstAttribute="leading" secondItem="kRG-Yg-2Ps" secondAttribute="leading" constant="8" id="roD-uX-eMB"/>
+                        <constraint firstAttribute="bottom" secondItem="qom-K9-uAK" secondAttribute="bottom" constant="8" id="tA1-nc-G4r"/>
+                        <constraint firstAttribute="trailing" secondItem="Jvr-L2-LbS" secondAttribute="trailing" constant="8" id="wy0-hp-bfN"/>
+                        <constraint firstAttribute="width" constant="350" id="yde-tr-9hZ"/>
+                        <constraint firstAttribute="trailing" secondItem="k5D-Xs-RmN" secondAttribute="trailing" constant="8" id="zl7-bs-fDg"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="kRG-Yg-2Ps" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="3ck-kC-6gM"/>
+                <constraint firstItem="kRG-Yg-2Ps" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="P0A-tm-4zB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
+        </view>
+    </objects>
+</document>

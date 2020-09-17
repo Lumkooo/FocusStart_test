@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AnQ-33-h5q">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Автомобили-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CarListViewController" customModule="FocusStart_TestTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a5E-vC-tns">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CarListTableViewCell" rowHeight="100" id="mE6-V9-WgD" customClass="CarListTableViewCell" customModule="FocusStart_TestTask" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mE6-V9-WgD" id="X5s-pH-n6Y">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Car Mark" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJ3-6k-a53">
+                                                    <rect key="frame" x="20" y="19" width="83.5" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Car Model" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJa-c8-7fa">
+                                                    <rect key="frame" x="111.5" y="19" width="94" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="year" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KtK-Cc-1UH">
+                                                    <rect key="frame" x="356.5" y="65" width="37.5" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="carBodyType" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="km3-ML-Pj9">
+                                                    <rect key="frame" x="20" y="65" width="112" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="DJa-c8-7fa" firstAttribute="leading" secondItem="UJ3-6k-a53" secondAttribute="trailing" constant="8" id="4eN-VE-xNx"/>
+                                                <constraint firstItem="km3-ML-Pj9" firstAttribute="leading" secondItem="X5s-pH-n6Y" secondAttribute="leadingMargin" id="SWC-l5-PuF"/>
+                                                <constraint firstItem="DJa-c8-7fa" firstAttribute="top" secondItem="X5s-pH-n6Y" secondAttribute="topMargin" constant="8" id="Yuf-aB-uhi"/>
+                                                <constraint firstItem="UJ3-6k-a53" firstAttribute="top" secondItem="X5s-pH-n6Y" secondAttribute="topMargin" constant="8" id="axe-aW-2Py"/>
+                                                <constraint firstItem="KtK-Cc-1UH" firstAttribute="trailing" secondItem="X5s-pH-n6Y" secondAttribute="trailingMargin" id="dkP-Jt-gyM"/>
+                                                <constraint firstItem="km3-ML-Pj9" firstAttribute="bottom" secondItem="X5s-pH-n6Y" secondAttribute="bottomMargin" id="lKk-ed-YU0"/>
+                                                <constraint firstItem="KtK-Cc-1UH" firstAttribute="bottom" secondItem="X5s-pH-n6Y" secondAttribute="bottomMargin" id="lSu-zO-0aM"/>
+                                                <constraint firstItem="UJ3-6k-a53" firstAttribute="leading" secondItem="X5s-pH-n6Y" secondAttribute="leadingMargin" id="q8R-Le-abf"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="carBodyType" destination="km3-ML-Pj9" id="51B-lz-PQ2"/>
+                                            <outlet property="carMarkLabel" destination="UJ3-6k-a53" id="S58-8T-Xrj"/>
+                                            <outlet property="carModelLabel" destination="DJa-c8-7fa" id="mIZ-b8-ShV"/>
+                                            <outlet property="carYearLabel" destination="KtK-Cc-1UH" id="iC6-qn-RtV"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="a5E-vC-tns" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7yY-uD-9dU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a5E-vC-tns" secondAttribute="trailing" id="REH-xT-oNH"/>
+                            <constraint firstItem="a5E-vC-tns" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kNZ-P9-jSq"/>
+                            <constraint firstAttribute="bottom" secondItem="a5E-vC-tns" secondAttribute="bottom" id="wPR-zk-1ge"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Автомобили" id="lgk-2f-Q6Q">
+                        <barButtonItem key="leftBarButtonItem" title="Удаление" id="xTf-2n-K6N">
+                            <connections>
+                                <action selector="editListAction:" destination="BYZ-38-t0r" id="Pl3-j2-7Mz"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="MGW-rz-luV">
+                            <connections>
+                                <action selector="addCarAction:" destination="BYZ-38-t0r" id="Drj-Jh-jaE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="a5E-vC-tns" id="Cc6-gj-c5t"/>
+                        <segue destination="Vpy-Wc-3lY" kind="show" identifier="showOneCarSegueID" id="SIP-Z9-b9U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="93.75"/>
+        </scene>
+        <!--One Car View Controller-->
+        <scene sceneID="6la-ZI-64z">
+            <objects>
+                <viewController id="Vpy-Wc-3lY" customClass="OneCarViewController" customModule="FocusStart_TestTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zFe-SS-ljJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNJ-kR-n9b">
+                                <rect key="frame" x="20" y="160" width="374" height="60"/>
+                                <string key="text">Год производства:
+2020</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Тип кузова" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="142-WG-qgN">
+                                <rect key="frame" x="20" y="240" width="123.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBd-NO-Ale">
+                                <rect key="frame" x="20" y="812" width="374" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5uF-sr-SyF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Редактировать">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="changeThisCarAction:" destination="Vpy-Wc-3lY" eventType="touchUpInside" id="kTC-2b-BiF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jNJ-kR-n9b" firstAttribute="leading" secondItem="K6V-vM-N0v" secondAttribute="leading" constant="20" id="IZ1-g6-hIS"/>
+                            <constraint firstItem="K6V-vM-N0v" firstAttribute="trailing" secondItem="uBd-NO-Ale" secondAttribute="trailing" constant="20" id="NeS-ba-Noz"/>
+                            <constraint firstItem="jNJ-kR-n9b" firstAttribute="top" secondItem="K6V-vM-N0v" secondAttribute="top" constant="20" id="RQc-87-X3c"/>
+                            <constraint firstItem="uBd-NO-Ale" firstAttribute="bottom" secondItem="K6V-vM-N0v" secondAttribute="bottom" id="Yqa-Uc-3hl"/>
+                            <constraint firstItem="142-WG-qgN" firstAttribute="leading" secondItem="K6V-vM-N0v" secondAttribute="leading" constant="20" id="ZyC-AE-Eta"/>
+                            <constraint firstItem="uBd-NO-Ale" firstAttribute="leading" secondItem="K6V-vM-N0v" secondAttribute="leading" constant="20" id="nBH-kr-FPg"/>
+                            <constraint firstItem="K6V-vM-N0v" firstAttribute="trailing" secondItem="jNJ-kR-n9b" secondAttribute="trailing" constant="20" id="nCO-ZJ-Adn"/>
+                            <constraint firstItem="142-WG-qgN" firstAttribute="top" secondItem="jNJ-kR-n9b" secondAttribute="bottom" constant="20" id="nTC-GB-L6G"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="K6V-vM-N0v"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9aK-jt-TRs"/>
+                    <connections>
+                        <outlet property="carBodyTypeLabel" destination="142-WG-qgN" id="cgN-DV-JUv"/>
+                        <outlet property="carYearLabel" destination="jNJ-kR-n9b" id="Wyt-2R-G2X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kIK-or-OEk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1882.608695652174" y="93.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0x7-8g-qBj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AnQ-33-h5q" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="BZB-Hl-kDn">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ai4-AQ-JXK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mse-VB-arx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+    </resources>
+</document>
